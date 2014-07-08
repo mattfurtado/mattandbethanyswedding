@@ -1,0 +1,15 @@
+/* line 3, ../sass/main.sass */
+html {
+  font-size: 62.5%;
+}
+
+/* line 6, ../sass/main.sass */
+body {
+  text-align: center;
+}
+
+/* line 9, ../sass/main.sass */
+h1 {
+  font-family: "giddyup-std-1", "giddyup-std-2", sans-serif;
+  font-size: 3.6rem;
+}
