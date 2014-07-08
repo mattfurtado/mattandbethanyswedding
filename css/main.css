@@ -82,20 +82,39 @@ a {
 
 /* line 17, ../sass/main.sass */
 h1 {
-  font-family: "giddyup-std-1", "giddyup-std-2", sans-serif;
-  font-size: 3.6rem;
+  font-size: 4rem;
 }
 
-/* line 22, ../sass/main.sass */
+/* line 20, ../sass/main.sass */
+h2 {
+  font-size: 3.2rem;
+}
+
+/* line 23, ../sass/main.sass */
+h3 {
+  font-size: 2.4rem;
+}
+
+/* line 26, ../sass/main.sass */
+h4 {
+  font-size: 2rem;
+}
+
+/* line 29, ../sass/main.sass */
+h5, h6 {
+  font-size: 1.6rem;
+}
+
+/* line 32, ../sass/main.sass */
 ul.inline li {
   display: inline-block;
 }
 
-/* line 25, ../sass/main.sass */
+/* line 35, ../sass/main.sass */
 ul#main-nav {
   display: inline-block;
 }
-/* line 28, ../sass/main.sass */
+/* line 38, ../sass/main.sass */
 ul#main-nav li {
   padding: 0 1rem;
 }
