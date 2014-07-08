@@ -63,58 +63,112 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 5, ../sass/main.sass */
+/* line 16, ../sass/main.sass */
 html {
   font-size: 62.5%;
 }
 
-/* line 8, ../sass/main.sass */
+/* line 19, ../sass/main.sass */
 body {
+  margin: 60px;
+  background-color: #fffce9;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   text-align: center;
 }
 
-/* line 14, ../sass/main.sass */
+/* line 27, ../sass/main.sass */
 a {
+  color: #158fbf;
   text-decoration: none;
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+/* line 32, ../sass/main.sass */
+a:hover {
+  color: #127ea8;
 }
 
-/* line 17, ../sass/main.sass */
+/* line 35, ../sass/main.sass */
 h1 {
-  font-size: 4rem;
+  margin-bottom: 4rem;
+  font-family: "Sacramento", serif;
+  font-size: 6rem;
+  color: #6ba5a3;
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 43, ../sass/main.sass */
+h1 > small {
+  display: block;
+  height: 1.5em;
+  font-size: 2.4rem;
+  color: #9aecea;
+  text-indent: 40rem;
 }
 
-/* line 20, ../sass/main.sass */
+/* line 50, ../sass/main.sass */
 h2 {
   font-size: 3.2rem;
 }
 
-/* line 23, ../sass/main.sass */
+/* line 53, ../sass/main.sass */
 h3 {
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 2.4rem;
 }
 
-/* line 26, ../sass/main.sass */
+/* line 57, ../sass/main.sass */
 h4 {
   font-size: 2rem;
 }
 
-/* line 29, ../sass/main.sass */
+/* line 60, ../sass/main.sass */
 h5, h6 {
   font-size: 1.6rem;
 }
 
-/* line 32, ../sass/main.sass */
+/* line 63, ../sass/main.sass */
 ul.inline li {
   display: inline-block;
 }
 
-/* line 35, ../sass/main.sass */
+/* line 66, ../sass/main.sass */
+img.engagement-photo {
+  max-width: 500px;
+  border: 20px solid white;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -ms-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  transform: rotate(2deg);
+  -webkit-box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* line 72, ../sass/main.sass */
 ul#main-nav {
   display: inline-block;
+  margin-bottom: 10rem;
 }
-/* line 38, ../sass/main.sass */
+/* line 76, ../sass/main.sass */
 ul#main-nav li {
   padding: 0 1rem;
+}
+/* line 79, ../sass/main.sass */
+ul#main-nav li a {
+  font-family: "Josefin Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 82, ../sass/main.sass */
+ul#main-nav, .page-section {
+  display: none;
+}
+
+/* line 85, ../sass/main.sass */
+.page-section {
+  margin-bottom: 10rem;
 }

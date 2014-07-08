@@ -2,25 +2,56 @@
 @import "compass/css3"
 @import "compass/utilities/general/clearfix"
 
+// COLORS
+$lightTeal: #CAFCFB
+$teal: #9AECEA
+$darkTeal: #9AECEA
+$mint: #DBFFDF
+$cream: mix(#fff, #FFFAD4, 50%)
+$babyBlue: #91D7F2
+$linkBlue: #158FBF
+
+$sanserif: "Helvetica Neue", Helvetica, Arial, sans-serif
+
 html
   font-size: 62.5%
 
 body
+  margin: 60px
+  background-color: $cream
   font:
-    family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    family: $sanserif
     size: 1.6rem
   text-align: center
 
 a
+  color: $linkBlue
   text-decoration: none
+  +transition(color .2s)
+
+  &:hover
+    color: darken($linkBlue, 5%)
 
 h1
-  font-size: 4rem
+  margin-bottom: 4rem
+  font:
+    family: "Sacramento", serif
+    size: 6rem
+  color: mix(#000, $darkTeal, 30%)
+  +clearfix
+
+  > small
+    display: block
+    height: 1.5em
+    font-size: 2.4rem
+    color: $teal
+    text-indent: 40rem
 
 h2
   font-size: 3.2rem
 
 h3
+  font-family: "Josefin Sans", $sanserif
   font-size: 2.4rem
 
 h4
@@ -32,8 +63,24 @@ h5, h6
 ul.inline li
   display: inline-block
 
+img.engagement-photo
+  max-width: 500px
+  border: 20px solid white
+  +rotate(2deg)
+  +box-shadow(2px 5px 20px rgba(black, .1))
+
 ul#main-nav
   display: inline-block
+  margin-bottom: 10rem
 
   li
     padding: 0 1rem
+
+    a
+      font-family: "Josefin Sans", $sanserif
+
+ul#main-nav, .page-section
+  display: none
+
+.page-section
+  margin-bottom: 10rem
