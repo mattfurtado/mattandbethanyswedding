@@ -1,14 +1,29 @@
 @import "compass/reset"
 @import "compass/css3"
+@import "compass/utilities/general/clearfix"
 
 html
   font-size: 62.5%
 
 body
-  font-size: 1.6rem
+  font:
+    family: "Helvetica Neue", Helvetica, Arial, sans-serif
+    size: 1.6rem
   text-align: center
+
+a
+  text-decoration: none
 
 h1
   font:
     family: "giddyup-std-1","giddyup-std-2",sans-serif
     size: 3.6rem
+
+ul.inline li
+  display: inline-block
+
+ul#main-nav
+  display: inline-block
+
+  li
+    padding: 0 1rem

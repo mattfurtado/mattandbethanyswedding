@@ -63,19 +63,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 4, ../sass/main.sass */
+/* line 5, ../sass/main.sass */
 html {
   font-size: 62.5%;
 }
 
-/* line 7, ../sass/main.sass */
+/* line 8, ../sass/main.sass */
 body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
   text-align: center;
 }
 
-/* line 11, ../sass/main.sass */
+/* line 14, ../sass/main.sass */
+a {
+  text-decoration: none;
+}
+
+/* line 17, ../sass/main.sass */
 h1 {
   font-family: "giddyup-std-1", "giddyup-std-2", sans-serif;
   font-size: 3.6rem;
+}
+
+/* line 22, ../sass/main.sass */
+ul.inline li {
+  display: inline-block;
+}
+
+/* line 25, ../sass/main.sass */
+ul#main-nav {
+  display: inline-block;
+}
+/* line 28, ../sass/main.sass */
+ul#main-nav li {
+  padding: 0 1rem;
 }
