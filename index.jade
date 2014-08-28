@@ -1,0 +1,90 @@
+doctype html
+html(lang="en")
+  head
+    title Matt and Bethany's Wedding
+    link(rel="stylesheet", href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Nixie+One|Josefin+Sans|Grand+Hotel|Sacramento|Handlee|Satisfy")
+    link(rel="stylesheet", href="/css/main.css")
+  body
+    nav.main-nav.navbar.navbar-default(role="navigation")
+      div.container
+        ul.nav.navbar-nav
+          li: a(href="#our-story") Our Story
+          li: a(href="#wedding-party") Wedding Party
+          li.dropdown
+            a.dropdown-toggle(href="#wedding", data-toggle="dropdown")
+              | Wedding&nbsp;
+              span.caret
+            ul.dropdown-menu(role="menu")
+              li: a(href="#ceremony") Ceremony
+              li: a(href="#party") Party
+              li: a(href="#registry") Registry
+          li.dropdown
+            a.dropdown-toggle(href="#location", data-toggle="dropdown")
+              | Location&nbsp;
+              span.caret
+            ul.dropdown-menu(role="menu")
+              li: a(href="#travel") Travel
+              li: a(href="#hotels") Hotels
+              li: a(href="#portsmouth") Portsmouth
+          li.dropdown
+            a.dropdown-toggle(href="#contact", data-toggle="dropdown")
+              | Contact&nbsp;
+              span.caret
+            ul.dropdown-menu(role="menu")
+              li: a(href="#guestbook") Guestbook
+
+    div.container
+      header.main-header
+        h1 Matt and Bethany's Wedding
+        h2 July 18, 2015
+        div.engagement-photo-wrapper
+          img(src="/img/engagement1.jpg", alt="engagement photo")
+
+    section#our-story.page-section.coming-soon
+      div.container
+        header: h3 Our Story
+
+    section#wedding-party.page-section.coming-soon
+      div.container
+        header: h3 Wedding Party
+
+    section#ceremony.page-section.coming-soon
+      div.container
+        header: h3 Ceremony
+
+    section#party.page-section.coming-soon
+      div.container
+        header: h3 Party
+
+    section#registry.page-section.coming-soon
+      div.container
+        header: h3 Registry
+
+    section#location.page-section
+      div.container
+        header: h3 Location
+        iframe(src="https://mapsengine.google.com/map/embed?mid=zoWfB1w8uWAc.kq55KDrG4iGg")
+
+    section#travel.page-section.coming-soon
+      div.container
+        header: h3 Travel
+
+    section#hotels.page-section.coming-soon
+      div.container
+        header: h3 Hotels
+
+    section#portsmouth.page-section.coming-soon
+      div.container
+        header: h3 Portsmouth
+
+    section#contact.page-section.coming-soon
+      div.container
+        header: h3 Contact
+
+    section#guestbook.page-section.coming-soon
+      div.container
+        header: h3 Guestbook
+
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
+    script(src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
