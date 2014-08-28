@@ -1,86 +1,105 @@
-@import "compass/reset"
-@import "compass/css3"
-@import "compass/utilities/general/clearfix"
+@import "variables"
+@import "mixins"
 
-// COLORS
-$lightTeal: #CAFCFB
-$teal: #9AECEA
-$darkTeal: #9AECEA
-$mint: #DBFFDF
-$cream: mix(#fff, #FFFAD4, 50%)
-$babyBlue: #91D7F2
-$linkBlue: #158FBF
+// Nav
+.main-nav
+  .nav, .nav > li
+    float: none
+    display: inline-block
+    vertical-align: top
 
-$sanserif: "Helvetica Neue", Helvetica, Arial, sans-serif
+  > .container
+    text-align: center
 
-html
-  font-size: 62.5%
-
-body
-  margin: 60px
-  background-color: $cream
-  font:
-    family: $sanserif
-    size: 1.6rem
+// Main header
+.main-header
+  position: relative
   text-align: center
 
-a
-  color: $linkBlue
-  text-decoration: none
-  +transition(color .2s)
+  h1, h2
+    position: relative
+    z-index: 1
 
-  &:hover
-    color: darken($linkBlue, 5%)
+  h1
+    font:
+      family: $sacramento
+      size: 6rem
 
-h1
-  margin-bottom: 4rem
-  font:
-    family: "Sacramento", serif
-    size: 6rem
-  color: mix(#000, $darkTeal, 30%)
-  +clearfix
-
-  > small
-    display: block
-    height: 1.5em
+  h2
+    position: relative
+    top: -2rem
     font-size: 2.4rem
-    color: $teal
     text-indent: 40rem
 
-h2
-  font-size: 3.2rem
+  .engagement-photo-wrapper
+    position: relative
+    z-index: 0
+    margin-top: -70px
 
-h3
-  font-family: "Josefin Sans", $sanserif
-  font-size: 2.4rem
+    &:after
+      content: ""
+      position: absolute
+      left: 0
+      bottom: 0
+      display: block
+      width: 100%
+      height: 33%
+      background: linear-gradient(rgba(white, 0), rgba(white, 100))
 
-h4
-  font-size: 2rem
-
-h5, h6
-  font-size: 1.6rem
-
-ul.inline li
-  display: inline-block
-
-img.engagement-photo
-  max-width: 500px
-  border: 20px solid white
-  +rotate(2deg)
-  +box-shadow(2px 5px 20px rgba(black, .1))
-
-ul#main-nav
-  display: inline-block
-  margin-bottom: 10rem
-
-  li
-    padding: 0 1rem
-
-    a
-      font-family: "Josefin Sans", $sanserif
-
-ul#main-nav, .page-section
-  display: none
-
+// Page sections
 .page-section
-  margin-bottom: 10rem
+  padding: 5rem 0
+  border-top: 2px dashed rgba(black, .2)
+
+  &:first-child
+    border-top: none
+
+  > .container > header
+    text-align: center
+
+  &.coming-soon:after
+    content: "Coming soon!"
+    display: block
+    width: 200px
+    margin: 2rem auto 0
+    padding: 1rem 2rem
+    box-sizing: border-box
+    border: 1px solid rgba(black, .2)
+    text-align: center
+
+#location
+  position: relative
+  min-height: 500px
+
+  h3
+    $height: 46px
+    $width: 140px
+
+    position: absolute
+    top: 50%
+    left: 50%
+    z-index: 1
+    display: inline-block
+    width: $width
+    height: $height
+    padding: 1rem 2rem
+    margin:
+      top: -($height / 2)
+      left: -($width / 2)
+    box-sizing: border-box
+    background-color: white
+    border: 1px solid rgba(black, .2)
+    opacity: 1
+    transition: opacity .5s
+
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    width: 100%
+    height: 100%
+
+  &:hover
+    h3
+      opacity: 0
